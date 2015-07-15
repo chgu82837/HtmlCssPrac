@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RWD</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="test.css">
+    <style>
+        .column {
+            float: left;
+            border: 2px solid red;
+            box-sizing: border-box;
+            height: 40px;
+        }
+        .four {
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                color: red;
+            }
+            .four {
+                width:100%;
+            }
+        }
+        @media (min-width: 992px) {
+            h1 {
+                color: blue;
+            }
+            .four {
+                width:50%;
+            }
+        }
+        @media (min-width: 1200px) {
+            h1 {
+                color: yellow;
+            }
+            .four {
+                width:25%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="nav.js"></script>
+    <h1>haha</h1>
+    <div class="box">
+        <div class="four column"></div>
+        <div class="four column"></div>
+        <div class="four column"></div>
+        <div class="four column"></div>
+        <div class="four column"></div>
+        <div class="four column"></div>
+        <div class="four column"></div>
+        <div class="four column"></div>
+    </div>
+
+</body>
+</html>
