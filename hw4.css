@@ -1,0 +1,324 @@
+body {
+    margin-top: 100px;
+}
+
+nav.navbar .navbar-text {
+    margin-right: 8px;
+}
+
+.btn-slider {
+    background-color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-slider .btn-slider-icon {
+    transition: border-bottom-right-radius 0.5s, border-top-right-radius 0.5s;
+}
+
+.btn-slider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: dimgrey;
+    width: 0;
+    height: 100%;
+    transition: width 0.5s;
+}
+
+.btn-slider.btn-slider-right::before {
+    right: 0;
+    left: auto;
+}
+
+.btn-slider:not(:hover) .btn-slider-icon {
+    border-radius: 10px !important;
+    /*border-bottom-right-radius: 10px !important;*/
+}
+
+.btn-slider:hover::before {
+    content: '';
+    width: 100%;
+}
+
+.btn-slider .btn:not(.btn-slider-icon) {
+    background: none;
+    border: 0;
+    color: white;
+}
+
+.btn-slider .btn > span.sub {
+    color: #B1B1B1;
+}
+
+ul.nav-6-items {
+    width: 100%;
+}
+
+ul.nav-6-items > li {
+    width: 16.66667%;
+    text-align: center;
+}
+
+ul.nav-vis-style,
+ul.nav-vis-style ul {
+    background-color: #272727;
+}
+
+ul.nav-vis-style li {
+    background-color: #272727 !important;
+    position: relative;
+}
+
+ul.nav-vis-style li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    right: 10%;
+    height: 10%;
+    background-color: #00BDFF;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+ul.nav-vis-style li:hover::before {
+    opacity: 1;
+}
+
+.navbar .nav-vis-style.navbar-nav>li>a,
+.nav-vis-style ul.dropdown-menu>li>a,
+.navbar .nav-vis-style.navbar-nav>.open>a {
+    background: none;
+    color: white;
+}
+
+#slide {
+    background: radial-gradient(circle, transparent 20%, #7EFFF1 20%, #7EFFF1 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #7EFFF1 20%, #7EFFF1 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #A8B1BB 8px, transparent 8px) -4px 0;
+    background-color: #7EFFF1;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+}
+
+#slide .container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+#slide h3 {
+    color: #00BDFF;
+}
+
+#services {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ABABAB;
+}
+
+.vis-style-thumbnail {
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 305px;
+    position: relative;
+}
+
+.vis-style-thumbnail .caption {
+    background-color: rgb(102, 150, 148);
+    position: absolute;
+    border-radius: 10px;
+    top: 190px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.vis-style-thumbnail img {
+    width: 100%;
+    position: absolute;
+}
+
+.vis-style-thumbnail.vis-style-thumbnail-scrollable img {
+    transition: 1.5s;
+    top: 0%;
+}
+
+.vis-style-thumbnail.vis-style-thumbnail-scrollable:hover img {
+    top: -50%;
+}
+
+.vis-style-thumbnail .caption > p {
+    margin-bottom: 0;
+}
+
+.vis-style-thumbnail .caption > h3 {
+    margin-top: 12px;
+}
+
+.vis-style-thumbnail .caption > span.glyphicon {
+    display: inline-block;
+    float: right;
+    font-size: 50px;
+    padding: 12px;
+    transition: color 0.5s;
+    color: black;
+}
+
+.vis-style-thumbnail:hover .caption > span.glyphicon {
+    color: white;
+}
+
+.vis-style-thumbnail .caption > .caption-text {
+    display: inline-block;
+}
+
+#recommend {
+    background: url('//i.imgur.com/z2hNuNb.jpg');
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: white;
+    background-attachment: fixed;
+}
+
+#recommend h2 {
+    font-size: 5em;
+    text-align: center;
+}
+
+#recommend h4 {
+    color: #DADADA;
+    text-align: center;
+}
+
+#recommend div.more {
+    text-align: center;
+}
+
+#action .action-box {
+    padding: 70px;
+    color: white;
+    text-align: center;
+}
+
+#action .action-box > .glyphicon {
+    display: inline-block;
+    font-size: 80px;
+    vertical-align: top;
+    margin-top: 25px;
+}
+
+#action .action-box h2 {
+    display: inline-block;
+    width: 70%;
+    font-size: 45px;
+    margin-left: 10px;
+}
+
+#action .action-box h2 > span {
+    font-size: 12px;
+    display: block;
+}
+
+#action .action-box-1 {
+    background-color: #9090FF;
+}
+
+#action .action-box-2 {
+    background-color: black;
+}
+
+#list {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#list > h1 {
+    margin-bottom: 30px;
+}
+
+.thumbnail.thumbnail-vis-list-style {
+    border: 0;
+}
+.thumbnail.thumbnail-vis-list-style .square-img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: #E6E6E6;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.thumbnail.thumbnail-vis-list-style .square-img img {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 30px;
+}
+.sale-tag {
+    position: absolute;
+    transform: rotate(-45deg);
+    background-color: gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    transform-origin: 45% 155%;
+}
+.thumbnail.thumbnail-vis-list-style .caption > h3 {
+    font-size: 1.25em;
+}
+.thumbnail.thumbnail-vis-list-style .caption > h3.price {
+    color: #6E6EFF;
+    font-size: 2em;
+}
+.thumbnail.thumbnail-vis-list-style .caption > h3.price > .ori {
+    font-size: 0.6em;
+    text-decoration: line-through;
+    color: #BBBBBB;
+}
+.thumbnail.thumbnail-vis-list-style .caption > p {
+    font-size: 0.7em;
+    color: #BBBBBB;
+}
+.thumbnail.thumbnail-vis-list-style .caption > .stars {
+    margin: 5px;
+}
+
+.btn-more {
+    overflow: hidden;
+}
+.btn-more .btn-the-more {
+    transition:
+        margin-left 1s,
+        opacity 2s;
+    opacity: 1;
+    margin-left: 0;
+    margin-right: 5px;
+}
+.thumbnail:not(:hover) .btn-more .btn-the-more {
+    margin-left: -100%;
+    opacity: 0;
+}
+.btn-more.btn-more-vis-style > .btn {
+    border-radius: 30px !important;
+    margin-right: 5px;
+    border: 0;
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 13px 15px 10px 15px;
+    font-size: 20px;
+}
+.btn-more.btn-more-vis-style > .btn.btn-primary {
+    background-color: #4646CA;
+}
+
+.pager.pager-right {
+    text-align: right;
+}

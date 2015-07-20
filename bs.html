@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        .col-demo {
+
+        }
+        .breadcrumb li + li:before {
+            content: '::';
+        }
+        .checkbox-inline+.checkbox-inline, .radio-inline+.radio-inline {
+            margin-left: 0;
+        }
+        .checkbox-inline, .radio-inline {
+            margin-right: 10px;
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+      <div class="container">
+        <h1 class="">Long time no see, Bootstrap!</h1>
+        <div class="row">
+            <div class="col-xs-4 col-xs-offset-4">
+                <a class="btn btn-success btn-block" href="./" role="button">Back to Index</a>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 1</div>
+            </div>
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 2</div>
+            </div>
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 3</div>
+            </div>
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 4</div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-xs-12 col-sm-6 col-sm-push-6 col-demo">
+                <div class="alert alert-success" role="alert">Push / Pull Demo Box 1</div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-sm-pull-6 col-demo">
+                <div class="alert alert-success" role="alert">Push / Pull Demo Box 2</div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 3</div>
+            </div>
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 4</div>
+            </div>
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 4</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+                <div class="alert alert-success" role="alert">Hello 4</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8">
+                <div class="thumbnail">
+                    <img src="//i.imgur.com/usij2.jpg" alt="">
+                    <div class="caption">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi atque praesentium incidunt possimus in ratione facere, quisquam ullam impedit maxime quo amet neque assumenda laborum quos, iusto totam, mollitia ex.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-offset-2 col-xs-8">
+                <a class="thumbnail">
+                    <img src="//i.imgur.com/usij2.jpg" alt="">
+                    <div class="caption">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi atque praesentium incidunt possimus in ratione facere, quisquam ullam impedit maxime quo amet neque assumenda laborum quos, iusto totam, mollitia ex.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-offset-2 col-xs-8">
+                <div class="thumbnail">
+                    <img src="//i.imgur.com/usij2.jpg" alt="">
+                    <div class="caption">
+                        <h2>Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi atque praesentium incidunt possimus in ratione facere, quisquam ullam impedit maxime quo amet neque assumenda laborum quos, iusto totam, mollitia ex.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <ol class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li class="active">Data</li>
+        </ol>
+        <div class="row">
+            <div class="col-xs-offset-2 col-xs-8">
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, <span class="text-muted">consectetur adipisicing elit</span>. Animi saepe dolor, porro temporibus neque placeat possimus iusto, cumque vero culpa ipsum nisi nesciunt, veniam quibusdam doloribus repudiandae vitae hic reiciendis!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam sapiente quisquam, suscipit. Quod quibusdam maiores obcaecati non vel quae maxime corrupti recusandae amet. Quam, quo, odio. Rem aperiam quos temporibus.
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped table-condensed">
+                        <thead>
+                            <tr>
+                                <th>123</th>
+                                <th>123</th>
+                                <th>lkjljl</th>
+                                <th>1231</th>
+                                <th>123</th>
+                                <th>lkjljl</th>
+                                <th>1231</th>
+                                <th>123</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                            </tr>
+                            <tr>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>908</td>
+                                <td>098</td>
+                                <td>098</td>
+                            </tr>
+                            <tr>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>09</td>
+                                <td>8098</td>
+                                <td>09</td>
+                            </tr>
+                            <tr>
+                                <td>8098</td>
+                                <td>8</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>098</td>
+                                <td>9</td>
+                                <td>08908</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">Form</div>
+                  <div class="panel-body">
+                      <form action="#">
+                          <div class="form-group">
+                              <label for="username">Usernameeee</label>
+                              <input type="text" class="form-control" name="username" id="username" placeholder="Username">
+                          </div>
+                          <input type="password" class="form-control" name="password" placeholder="Password">
+                      </form>
+                    <br>
+                    <div class="radio"><label for="g"><input class="radio-inline" type="radio" name="sex" id="g">op_g</label></div>
+                    <div class="radio"><label for="b"><input class="radio-inline" type="radio" name="sex" id="b">op_b</label></div>
+                    <div class="radio"><label for="i"><input class="radio-inline" type="radio" name="sex" id="i">op_i</label></div>
+                    <hr>
+                    <div class="checkbox"><label class="checkbox-inline" for="agree"><input type="checkbox" name="agree" id="agree">Agree</label></div>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3"> 4
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option3"> 5
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option3"> 6
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option3"> 7
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option3"> 8
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option3"> 9
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option3"> 10
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option3"> 11
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option3"> 12
+                    </label>
+                    <hr>
+                    <textarea class="form-control" name="comment" id="" cols="30" rows="10"></textarea>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-offset-2 col-xs-8">
+            <div class="row">
+
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <div class="alert alert-info" role="alert">Home</div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="alert alert-info" role="alert">Profile</div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="alert alert-info" role="alert">Messages</div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="alert alert-info" role="alert">Settings</div>
+                </div>
+              </div>
+
+
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+              Launch demo modal
+            </button>
+            <br>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+          <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+              <div class="alert alert-success" role="alert">Hello 1</div>
+          </div>
+          <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+              <div class="alert alert-success" role="alert">Hello 2</div>
+          </div>
+          <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+              <div class="alert alert-success" role="alert">Hello 3</div>
+          </div>
+          <div class="col-xs-offset-2 col-sm-offset-0 col-xs-8 col-sm-6 col-lg-4 col-demo">
+              <div class="alert alert-success" role="alert">Hello 4</div>
+          </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
